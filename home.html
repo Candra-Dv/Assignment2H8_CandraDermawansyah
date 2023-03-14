@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <section id="navbar">
+    <ul class="topnav">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">PRODUCT</a></li>
+      <li><a href="#">GALERY</a></li>
+      <li><a href="#">BLOG</a></li>
+      <li><a href="#">INVENTORY</a></li>
+    </ul>
+  </section>
+
+  <section id="profil">
+    <img src="img/Foto.jpg">
+    <div class="nama">
+      <h1 id="name">Candra Dermawansyah</h1>
+      <h3 id="role">Web Developer</h3>
+      <button type="button" class="btn-klik" onclick="showForm()">Edit</button>
+      <button type="button" class="btn-klik">Resume</button>
+    </div>
+
+    <table class="Fulldata">
+      <tr>
+        <td>Availability</td>
+        <td id="avail">: Full Time</td>
+      </tr>
+      <tr>
+        <td>Usia</td>
+        <td id="age">: 19</td>
+      </tr>
+      <tr>
+        <td>Lokasi</td>
+        <td id="location">: Bandung</td>
+      </tr>
+      <tr>
+        <td>Pengalaman</td>
+        <td id="year">: 2 Tahun</td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td id="email">: Candradermawansyah@gmail.com</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="form" style="display: none;">
+    <form>
+      <label for="name">Nama</label><br>
+      <input type="text" id="name-input"><br>
+      <label for="role">Role</label><br>
+      <input type="text" id="role-input"><br>
+      <label for="Availability">Availability</label><br>
+      <input type="text" id="avail-input"><br>
+      <label for="age">Usia</label><br>
+      <input type="text" id="age-input"><br>
+      <label for="location">Lokasi</label><br>
+      <input type="text" id="location-input"><br>
+      <label for="year">Year Experience</label><br>
+      <input type="text" id="year-input"><br>
+      <label for="email">Email</label><br>
+      <input type="text" id="email-input"><br>
+      <button type="button" class="btn-form" onclick="saveForm()">Submit</button>
+    </form>
+  </section>
+
+</html>
